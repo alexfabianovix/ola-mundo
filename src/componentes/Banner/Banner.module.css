@@ -1,0 +1,104 @@
+.banner {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 7.5rem 6.25rem;
+}
+
+.titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 4.875rem;
+}
+
+.paragrafo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imagens {
+    height: 406px;
+    position: relative;
+}
+
+.imagens > .minhaFoto {
+    border-radius: 50%;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 18vw;
+}
+
+.imagens > .circuloColorido {
+    bottom: 2.2vw;
+    position: absolute;
+    right: 7vw;
+    width: 25vw;
+}
+
+@media (max-width: 1100px) {    
+    .banner {
+        padding: 3.5rem 1.5rem;
+    }
+
+    .titulo {
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+    }
+
+    .paragrafo {
+        margin-bottom: 1.5rem;
+    }
+
+    .imagens {
+        height: 338px;
+    }
+
+    .imagens > .minhaFoto {
+        width: 25vw;
+    }
+
+    .imagens > .circuloColorido {
+        right: 10vw;
+        width: 35vw;
+    }
+}
+
+@media (max-width: 744px) {
+    .banner {
+        display: block;
+        padding: 2rem 1rem;
+    }
+
+    .titulo {
+        margin-bottom: 2rem;
+    }
+
+    .paragrafo {
+        margin-bottom: 2rem;
+    }
+
+    .imagens {
+        height: 307px;
+    }
+
+    .imagens > .minhaFoto, .imagens > .circuloColorido {
+        left: 0;
+        margin: 0 auto;
+        right: 0;
+    }
+
+    .imagens > .minhaFoto {
+        transform: translate(5rem, 0px);
+        width: 170px;
+    }
+
+    .imagens > .circuloColorido {
+        transform: translate(-1.5rem, 0px);
+        width: 240px;
+    }
+}

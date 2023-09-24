@@ -1,0 +1,13 @@
+.navegacao {
+    align-items: center;
+    column-gap: 3rem;
+    display: flex;
+    height: 112px;
+    justify-content: center;
+}
+
+@media (max-width: 744px) {
+    .navegacao {
+        height: 72px;
+    }
+}
